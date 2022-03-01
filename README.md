@@ -1,2 +1,1 @@
-# My-Resume-Project
-created own resume with html and CSS
+This is my Resume Project which I have built using html and css.
