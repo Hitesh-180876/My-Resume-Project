@@ -94,7 +94,7 @@ section:nth-child(2n+1){
     display: inline-block;
     padding-top: 10px;
     margin-left: 0.5rem;
-    text-align: center;
+
     
 }
 /* About Section */
@@ -123,6 +123,59 @@ section:nth-child(2n+1){
     text
 }
 
+
+/* Common margin classes */
+.mb75px{
+    margin-bottom: 75px;
+
+}
+
+.mb-blue{
+    color: red;
+}
+
+
 .section-heading{
     width: auto;
+}
+
+/* skills section */
+
+.skills-display{
+    width: 70%;
+
+    /*
+    height: 100%;
+    border: 2px solid black;
+    */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-progress{
+    width: 7rem;
+    height: 1.4rem;
+    background-color: blue;
+    border-radius: 0.8rem;
+    border: 2px solid black;
+}
+
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+}
+.skill-name{
+    color: red;
+}
+
+.skill1{
+    color: red;
+}
+
+/* common percentage class */
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
 }
