@@ -68,10 +68,13 @@ body{
 }
 
 section{
-    height: 75vh;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 section:nth-child(2n){
@@ -106,10 +109,18 @@ section:nth-child(2n+1){
 }
 
 #my-image{
-    height: 12rem;
-    width: 12rem;
-    margin: auto;
-    margin-top: -17vh;
+    transition: 1s;
+    width: 17%;
+    height: auto;
+    min-width: 240px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: +1;
+    transform: translateY(-50%);
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 7px 4px lightgrey;
 }
 
 #my-image img{
@@ -118,22 +129,28 @@ section:nth-child(2n+1){
     border-radius: 60%;
 }
 
-#about-para{
-    text-align: center;
-    text
+#about-para #self-info span{
+    color: #2857a4;
 }
 
+#about #self-info{
+    color: grey;
+    font-size: 1.5em;
+    text-align: justify;
+    width: 70%;
+    min-width: 660px;
+    margin: -3em auto 2em;
+}
 
 /* Common margin classes */
+
+/*
 .mb75px{
     margin-bottom: 75px;
 
 }
 
-.mb-blue{
-    color: red;
-}
-
+*/
 
 .section-heading{
     width: auto;
@@ -141,41 +158,65 @@ section:nth-child(2n+1){
 
 /* skills section */
 
-.skills-display{
-    width: 70%;
-
-    /*
-    height: 100%;
-    border: 2px solid black;
-    */
-
+#skills-icon{
+    height: 30px;
+}
+#skills-container {
+    width: 80%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+  }
 
 .skill-progress{
-    width: 7rem;
-    height: 1.4rem;
+    width: 20%;
+    min-width: 180px;
+    height: auto;
+    border-radius: 25px;
+    background-color: lightgrey;
+    margin: 2rem 1rem;
+}
+
+.skill-progress > div{
+    border-radius: 25px 0 0 25px;
+    box-shadow: 4px 0px 4px 0px grey;
+    
+}
+
+
+#skill-1, #skill-5{
     background-color: blue;
-    border-radius: 0.8rem;
-    border: 2px solid black;
 }
 
-.skill-name span{
+
+#skill-2 {
+    background-color: orangered;
+  }
+  
+  #skill-4 {
+    background-color: green;
+  }
+  
+  #skill-3, #skill-6 {
+    background-color: palevioletred;
+  }
+  
+  .skill-name {
+    margin-left: 10px;
     color: white;
-    font-size: 1rem;
-}
-.skill-name{
-    color: red;
-}
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+  }
 
-.skill1{
-    color: red;
-}
 
 /* common percentage class */
 .eighty-five-percent{
     width: 85%;
     height: inherit;
 }
+.fifty-percent{
+    width: 50%;
+    height: inherit;
+}
+
